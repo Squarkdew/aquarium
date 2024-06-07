@@ -32,14 +32,16 @@ function Main(props) {
 
             <div className={cls.second_screen}>
                 <img className={cls.img2} src={blueFish1} alt="" />
-                <img className={cls.img3} src={violetFish} alt="" />
+                <div>
+                    <img className={cls.img3} src={violetFish} alt="" />
+                </div>
                 <div className={cls.text_second_screen}>
                     <h1 className={cls.title3}>Explore All The Incredible Creatures</h1>
                     <ul className={cls.list1}>
-                        <li className={cls.li1}>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li className={cls.li1}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, ipsum!</li>
-                        <li className={cls.li1}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam!</li>
-                        <li className={cls.li1}>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li className={cls.li1}><span className={cls.span1}>Lorem, ipsum dolor sit amet consectetur adipisicing.</span></li>
+                        <li className={cls.li1}><span className={cls.span1}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nihil.</span></li>
+                        <li className={cls.li1}><span className={cls.span1}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></li>
+                        <li className={cls.li1}><span className={cls.span1}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit.</span></li>
                     </ul>
                 </div>
             </div>
