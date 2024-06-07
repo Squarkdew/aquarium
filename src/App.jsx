@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Main from "./components/main/Main";
+import Header from "./components/header/Header";
 
 function App() {
   const get = async () => {
@@ -18,6 +19,7 @@ function App() {
   })
   return (
     <div className="app">
+      <Header/>
       <Routes>
         <Route path="/" element={<Main/>}/>
       </Routes>
