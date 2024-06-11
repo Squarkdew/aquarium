@@ -1,6 +1,6 @@
 import React from "react";
 import cls from "./Header.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -39,7 +39,11 @@ function Header(props) {
         <div className={cls.search}>
           <input type="text" placeholder="Искать" />
         </div>
-        <div className={cls.auth}>Войти</div>
+        <div className={cls.auth}>
+          <Link to={"/registration"}>
+            Войти
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Registration from "./components/Registration/Registration";
 import Autorization from "./components/Autorization/Autorizatuion"
 import { useEffect } from "react";
 import axios from "axios";
+import Header from "./components/Header/Header";
 function App() {
 
   const fish = [
@@ -123,6 +124,7 @@ function App() {
       <Routes>
         <Route path="/autorization" element={<Autorization />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/" element={<Header />} />
       </Routes>
     </div>
   );
